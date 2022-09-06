@@ -2,7 +2,8 @@ package StudentInfo;
 import java.util.Random;
 public class Grade {
     public static void main(String[] args) {
-        int grade = 74;
+        int grade = (int) (Math.random()* 100);
+        //int grade = 74;
         if (grade >= 90) {
             System.out.println("You got an A");
         } else if (grade >= 80 && grade < 90) {
@@ -16,11 +17,6 @@ public class Grade {
             System.out.println("you failed the class");
         }
 
-Random studentgrade = new Random();
-        int numer ;
-        for(int counter =1; counter<=10;counter++){
-            grade = studentgrade.nextInt(100);
-            System.out.println(grade + " ");
-        }
+
     }
 }
